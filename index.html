@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Our Universe 💖 For Sakshi</title>
+<link rel="stylesheet" href="styles.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+<button class="music-btn" id="musicBtn">🎵</button>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader">
+  <div class="preloader-content">
+    <div class="preloader-heart">💖</div>
+    <p class="preloader-text">Creating our universe for Kashu... 💕</p>
+    <div class="preloader-dots"><span></span><span></span><span></span></div>
+  </div>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-heart">💖</div>
+    <div class="hero-lines">
+      <p class="hero-line line1">Sakshi... 💖 The day you said yes changed everything</p>
+      <p class="hero-line line2">15th March 2024... My universe found its center</p>
+      <p class="hero-line line3">Kashu, I'd choose you in every lifetime 💍✨</p>
+    </div>
+    <button class="hero-btn" onclick="scrollToSection('timerSection')">Relive Our Journey, Sakshi 💖</button>
+  </div>
+  <div class="teddy-bear" onclick="showPopup('teddyPopup')" title="Click me!">🧸</div>
+  <div class="envelope-float" onclick="showPopup('envPopup')" title="Click me!">💌</div>
+</section>
+
+<!-- ========== LIVE TIMER ========== -->
+<section class="timer-section" id="timerSection">
+  <div class="timer-container">
+    <h2 class="timer-title">Every Moment With You, Sakshi 💕</h2>
+    <p class="timer-subtitle">Since 15th March 2024, 9:51 AM — when everything began 💫</p>
+    <div class="timer-grid">
+      <div class="timer-card">
+        <div class="tc-icon">💍</div>
+        <div class="tc-val" id="tYears">0</div>
+        <div class="tc-lbl">Years</div>
+      </div>
+      <div class="timer-card">
+        <div class="tc-icon">💝</div>
+        <div class="tc-val" id="tMonths">0</div>
+        <div class="tc-lbl">Months</div>
+      </div>
+      <div class="timer-card">
+        <div class="tc-icon">🌙</div>
+        <div class="tc-val" id="tDays">0</div>
+        <div class="tc-lbl">Days</div>
+      </div>
+      <div class="timer-card">
+        <div class="tc-icon">☀️</div>
+        <div class="tc-val" id="tHours">0</div>
+        <div class="tc-lbl">Hours</div>
+      </div>
+      <div class="timer-card highlight-card">
+        <div class="tc-icon">💫</div>
+        <div class="tc-val" id="tMinutes">0</div>
+        <div class="tc-lbl">Minutes</div>
+      </div>
+      <div class="timer-card pulse-card">
+        <div class="tc-icon">💗</div>
+        <div class="tc-val" id="tSeconds">0</div>
+        <div class="tc-lbl">Seconds</div>
+      </div>
+    </div>
+    <div class="timer-totals">
+      <div class="tt-item">
+        <span class="tt-num" id="ttHours">0</span>
+        <span class="tt-lbl">Total Hours of Loving Sakshi</span>
+      </div>
+      <div class="tt-item">
+        <span class="tt-num" id="ttMinutes">0</span>
+        <span class="tt-lbl">Total Minutes Together</span>
+      </div>
+      <div class="tt-item tt-big">
+        <span class="tt-num" id="ttSeconds">0</span>
+        <span class="tt-lbl">Total Seconds of Pure Love 💕</span>
+      </div>
+    </div>
+    <p class="timer-quote">"Every second with you is a universe of its own, Kashu ✨"</p>
+  </div>
+</section>
+
+<!-- ========== DISTANCE MAP ========== -->
+<section class="distance-section" id="distanceSection">
+  <div class="distance-container">
+    <h2 class="section-title">Anand 💕 Vellore | Distance Means Nothing, Sakshi 🌍</h2>
+    <div class="distance-map">
+      <div class="city-pin">
+        <div class="pin-pulse"></div>
+        <div class="pin-emoji">💖</div>
+        <div class="pin-name">Anand, Gujarat</div>
+        <div class="pin-sub">Where Sakshi lives 🏠</div>
+      </div>
+      <div class="map-path">
+        <div class="path-line"></div>
+        <div class="path-dots">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div class="map-heart" id="mapHeart">💖</div>
+        <div class="map-dist">~1,800 km</div>
+      </div>
+      <div class="city-pin">
+        <div class="pin-pulse blue-pulse"></div>
+        <div class="pin-emoji">💙</div>
+        <div class="pin-name">Vellore, Tamil Nadu</div>
+        <div class="pin-sub">Where I am 🏠</div>
+      </div>
+    </div>
+    <p class="distance-quote">"The moon connects us every night, Kashu — we share the same stars ⭐"</p>
+    <div class="dist-stats">
+      <div class="ds-item"><span class="ds-num">1,800</span><span class="ds-lbl">km Apart</span></div>
+      <div class="ds-item"><span class="ds-num">1</span><span class="ds-lbl">Heart United</span></div>
+      <div class="ds-item"><span class="ds-num">∞</span><span class="ds-lbl">Love Always</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== STORY ORBS ========== -->
+<section class="story-section" id="storySection">
+  <canvas id="storyCanvas"></canvas>
+  <h2 class="section-title" style="position:relative;z-index:2;text-align:center;">Our Story, Sakshi 💖</h2>
+  <p class="section-sub" style="position:relative;z-index:2;text-align:center;">Click each orb to open a chapter of our love story</p>
+  <div class="orbs-container">
+    <div class="story-orb" onclick="openStory(0)"><div class="orb-glow"></div><div class="orb-icon">💖</div><div class="orb-lbl">Our Beginning</div></div>
+    <div class="story-orb" onclick="openStory(1)"><div class="orb-glow"></div><div class="orb-icon">📞</div><div class="orb-lbl">Our Calls</div></div>
+    <div class="story-orb" onclick="openStory(2)"><div class="orb-glow"></div><div class="orb-icon">🌍</div><div class="orb-lbl">Our Distance</div></div>
+    <div class="story-orb" onclick="openStory(3)"><div class="orb-glow"></div><div class="orb-icon">🌙</div><div class="orb-lbl">Our Growth</div></div>
+    <div class="story-orb" onclick="openStory(4)"><div class="orb-glow"></div><div class="orb-icon">💍</div><div class="orb-lbl">Our Forever</div></div>
+  </div>
+  <div class="story-panel hidden" id="storyPanel">
+    <button class="story-close" onclick="closeStory()">✕</button>
+    <div class="story-content" id="storyContent"></div>
+  </div>
+</section>
+
+<!-- ========== GALLERY ========== -->
+<section class="gallery-section" id="gallerySection">
+  <h2 class="section-title">Our Memories, Kashu 📸</h2>
+  <p class="section-sub">Click any photo to see our beautiful moments in full 💕</p>
+  <div class="gallery-grid">
+    <div class="gallery-item" onclick="openLightbox(0)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-02-18-01_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Sakshi with flowers"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">The day Sakshi received flowers 🌸 — You glowed like the whole universe, Kashu</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(1)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-01-56-53_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Birthday video call"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Sakshi's birthday — celebrated over video call 🎂 Distance tried, love always won 💕</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(2)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-01-37-74_965bbf4d18d205f782c6b8409c57.jpg" alt="Together in person"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Finally together 💕 — The happiest I've ever been, right beside you, Kashu</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(3)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-07-04-00_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Video call laughing"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Sakshi's laugh through the screen 😄 — Worth every single kilometer, Kashu</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(4)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-07-24-61_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="2am call"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">2:53 AM calls with Kashu 🌙 — Time disappears when I'm with you, Sakshi</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(5)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-08-05-06_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Birthday screen kiss"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Sakshi's screen-birthday-kiss 💋 — You make even screens feel like home, Kashu</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(6)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-08-11-67_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Pizza video date"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Virtual pizza dates 🍕 — Even eating together feels perfect with you, Sakshi</p>
+    </div>
+    <div class="gallery-item" onclick="openLightbox(7)">
+      <div class="gallery-img-wrap">
+        <img src="Screenshot_2026-02-13-12-08-14-93_965bbf4d18d205f782c6b8409c5773a4.jpg" alt="Sleeping on call"/>
+        <div class="gallery-hover">🔍 View Memory</div>
+      </div>
+      <p class="gallery-cap">Falling asleep on call together 😴 — Goodnight is never enough, Kashu 💕</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LIGHTBOX ========== -->
+<div class="lightbox hidden" id="lightbox">
+  <div class="lb-backdrop" onclick="closeLightbox()"></div>
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <button class="lb-prev" onclick="changePhoto(-1)">&#8249;</button>
+  <button class="lb-next" onclick="changePhoto(1)">&#8250;</button>
+  <div class="lb-inner">
+    <div class="lb-img-wrap">
+      <img class="lb-img" id="lbImg" src="" alt="Our Memory"/>
+    </div>
+    <p class="lb-caption" id="lbCaption"></p>
+    <div class="lb-counter" id="lbCounter">1 / 8</div>
+  </div>
+</div>
+
+<!-- ========== LOVE LETTERS ========== -->
+<section class="letters-section" id="lettersSection">
+  <h2 class="section-title">Letters For You, Sakshi 💌</h2>
+  <p class="section-sub">Three secrets waiting just for Kashu to open 💕</p>
+  <div class="letters-grid">
+
+    <div class="letter-card">
+      <div class="letter-env" onclick="openLetter(0)">
+        <div class="env-flap"></div>
+        <div class="env-body-inner">
+          <div class="env-seal">💌</div>
+          <div class="env-name">To My Dearest Sakshi</div>
+          <div class="env-tap">Tap to open ✨</div>
+        </div>
+      </div>
+      <div class="letter-paper hidden" id="lpaper0">
+        <button class="lp-close" onclick="closeLetter(0)">✕</button>
+        <div class="letter-inner">
+          <h3>To My Dearest Sakshi, 💖</h3>
+          <p>Every morning I wake up thinking about you. Every night I fall asleep with your voice in my heart. You have no idea, Kashu, how much you've changed my world.</p>
+          <p>From Vellore, I look at the moon every night and whisper your name. In Anand, I hope you feel it — that warmth traveling 1,800 kilometers just to find you.</p>
+          <p>You are my first thought and my last. The reason I try harder every day. Sakshi, you are my everything. 🌙</p>
+          <p class="letter-sign">Forever yours, with all my love 💕</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="letter-card">
+      <div class="letter-env" onclick="openLetter(1)">
+        <div class="env-flap"></div>
+        <div class="env-body-inner">
+          <div class="env-seal">💝</div>
+          <div class="env-name">My Beautiful Kashu</div>
+          <div class="env-tap">Tap to open ✨</div>
+        </div>
+      </div>
+      <div class="letter-paper hidden" id="lpaper1">
+        <button class="lp-close" onclick="closeLetter(1)">✕</button>
+        <div class="letter-inner">
+          <h3>My Beautiful Kashu, 💝</h3>
+          <p>Distance was supposed to make this hard. But you made it the greatest adventure of my life. Every call, every "I miss you" — they weren't painful, Sakshi. They were proof.</p>
+          <p>Proof that what we have is real. That love doesn't need proximity to grow. That you and I — we are something the universe decided on long before we met. 🌌</p>
+          <p>You are my happiness from 1,800 kilometers away. Imagine what you'll be when we close that distance forever. 💫</p>
+          <p class="letter-sign">Yours completely, always 💖</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="letter-card">
+      <div class="letter-env" onclick="openLetter(2)">
+        <div class="env-flap"></div>
+        <div class="env-body-inner">
+          <div class="env-seal">💍</div>
+          <div class="env-name">To Sakshi, My Forever</div>
+          <div class="env-tap">Tap to open ✨</div>
+        </div>
+      </div>
+      <div class="letter-paper hidden" id="lpaper2">
+        <button class="lp-close" onclick="closeLetter(2)">✕</button>
+        <div class="letter-inner">
+          <h3>To Sakshi, My Forever, 💍</h3>
+          <p>15th March 2024. The day you said yes. The day my entire universe rearranged itself around one person — you, Kashu.</p>
+          <p>I promise you sunsets and mornings together. Lazy Sundays and a lifetime of choosing each other every single day. The distance was just the beginning. 🌅</p>
+          <p>You are my greatest blessing. My biggest adventure. My forever and always, Sakshi. 🌟</p>
+          <p class="letter-sign">All of me loves all of you, Kashu 💍✨</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== HIDDEN STARS ========== -->
+<section class="stars-section" id="starsSection">
+  <h2 class="section-title">Find Our Stars, Kashu ⭐</h2>
+  <p class="section-sub">20 hidden love messages scattered just for you, Sakshi</p>
+  <div class="stars-counter">Found: <span id="starsFound">0</span> / 20 ⭐</div>
+  <div class="stars-field" id="starsField"></div>
+</section>
+
+<!-- ========== SECRET PORTAL ========== -->
+<section class="portal-section" id="portalSection">
+  <div class="portal-box" id="portalBox">
+    <div class="portal-ring"><div class="portal-ring-inner"></div></div>
+    <h2 class="portal-title">🔐 Secret Portal</h2>
+    <p class="portal-hint">What Sakshi and I will be forever... ✨</p>
+    <div class="portal-form">
+      <input type="text" id="portalInput" class="portal-input" placeholder="Enter password..."
+        onkeydown="if(event.key==='Enter')checkPortal()"/>
+      <button class="portal-btn" onclick="checkPortal()">Unlock 💫</button>
+    </div>
+    <p class="portal-err" id="portalErr"></p>
+  </div>
+  <div class="portal-success hidden" id="portalSuccess">
+    <div class="ps-heart">💖</div>
+    <p class="ps-text">Forever Unlocked... 💍✨</p>
+    <p class="ps-sub">Scrolling to the final message for Sakshi...</p>
+  </div>
+</section>
+
+<!-- ========== FINAL SECTION ========== -->
+<section class="final-section" id="finalSection">
+  <canvas id="finalCanvas"></canvas>
+  <div class="final-content">
+    <div class="final-declaration">
+      <p class="final-line">From Anand to Vellore... 🌍</p>
+      <p class="final-line">From 15th March 2024 to infinity... ♾️</p>
+      <p class="final-line">Sakshi, Kashu... I choose you. Forever. 💍</p>
+    </div>
+    <div class="final-btns">
+      <button class="btn-forever" onclick="triggerForever()">This is Forever, Sakshi 💍</button>
+      <button class="btn-hug" id="hugBtn" onclick="triggerHug()">Send Virtual Hug to Kashu 🤗</button>
+      <button class="btn-no" id="btnNo" onmouseenter="dodgeBtn(this)" ontouchstart="dodgeBtn(this)" onclick="notReady()">Not Ready Yet 🙈</button>
+    </div>
+    <div class="forever-msg hidden" id="foreverMsg">
+      <div class="forever-hearts" id="foreverHearts"></div>
+      <p class="fm-main">Sakshi, you are my forever. My always. My home. My everything. 💕</p>
+      <p class="fm-sub">Almost 2 years with Kashu... and we're just getting started. 🌟</p>
+      <p class="fm-ded">To my Sakshi, my Kashu, the love of my life. This universe was built for you. 💖</p>
+    </div>
+    <div class="hug-msg hidden" id="hugMsg">
+      <div class="hug-icon" id="hugIcon">🤗</div>
+      <p class="hm-text">A warm hug traveling 1,800 km straight to Sakshi! 💨</p>
+      <p class="hm-sub">Feel it, Kashu? That's all my love wrapping around you 💕</p>
+      <div class="hug-hearts" id="hugHearts"></div>
+      <button class="btn-hug" style="margin-top:20px;" onclick="resetHug()">Send Another Hug 🤗</button>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Particles Container -->
+<div id="particles"></div>
+
+<!-- ========== POPUPS ========== -->
+<div class="popup-overlay hidden" id="teddyPopup" onclick="closePopupOutside(event,'teddyPopup')">
+  <div class="popup-card">
+    <button class="popup-close" onclick="closePopup('teddyPopup')">✕</button>
+    <div class="popup-emoji">🧸</div>
+    <p>I built this entire universe because Sakshi built mine. From 15th March 2024 onwards, everything changed with Kashu. 💕</p>
+  </div>
+</div>
+
+<div class="popup-overlay hidden" id="envPopup" onclick="closePopupOutside(event,'envPopup')">
+  <div class="popup-card">
+    <button class="popup-close" onclick="closePopup('envPopup')">✕</button>
+    <div class="popup-emoji">💌</div>
+    <p>From 15th March 2024 till forever... Through Anand and Vellore, through calls and texts — I choose Sakshi. Every single day. 💌</p>
+  </div>
+</div>
+
+<div class="popup-overlay hidden" id="starPopup" onclick="closePopupOutside(event,'starPopup')">
+  <div class="popup-card star-popup-card">
+    <button class="popup-close" onclick="closePopup('starPopup')">✕</button>
+    <div class="popup-emoji">⭐</div>
+    <p id="starMsg"></p>
+  </div>
+</div>
+
+<audio id="bgMusic" loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-memories.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
